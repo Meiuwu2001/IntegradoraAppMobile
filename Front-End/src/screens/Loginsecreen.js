@@ -25,7 +25,6 @@ const LoginScreen = ({ navigation }) => {
     <View style={styles.login_container}>
       <Spinner visible={isLoading} />
         <Image source={{ uri: LOGIN_IMAGE }} style={styles.login_image} />
-        <View style={styles.wrapper}>
           {error ? (
             <Text style={{ color: 'red', fontSize: 18, textAlign: 'center' }}>
               {error}
@@ -70,7 +69,6 @@ const LoginScreen = ({ navigation }) => {
           </TouchableOpacity>
         </View> */}
         </View>
-      </View>
   );
 };
 
